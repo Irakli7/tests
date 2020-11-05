@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <Div class="intro">
+        <div class="container">
+            <h1>Meril <span class="studio">Studio</span> 
+            </h1>
+            <p>
+                We are designers and developers team based out of Tbilisi, Gerogia and we are ready to make a project of any complexity.
+            </p>
+            <button type="Contact us">Contact us</button>
+            <div class="circle"></div>
+            <div class="circle2"></div>
+        </div>
+    </Div>
+
+    <div class="BlackBG">
+        <div>
+            <div class="circle3"></div>
+        </div>
+    </div>
+
+    <div class="animation">
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).scroll(function(){
+    var scroll = $(window).scrollTop();
+    var amount = -1500+(scroll*0.8);
+    if (amount < 50)
+    {
+      $('.letter').css({left:amount+"px"});
+      
+      $('.letter2').css({left:amount+"px"});
+    }
+  });
+    </script>
+
+    
+    <div id="main">
+      <div class="box">
+        <img class="letter" src="1.svg" alt="text1">
+        <img class="letter2" src="2.svg" alt="text1">
+        <img class="letter2" src="3.svg" alt="text1">
+
+      </div>
+    </div>
+    
+</div>  
+</body>
+</html>
